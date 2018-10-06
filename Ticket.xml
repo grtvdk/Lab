@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <ticket>
+        <flightNum>1</flightNum>
+        <placeNum>11</placeNum>
+        <price>5000</price>
+        <passengerName>Andrew</passengerName>
+        <passengerLastName>Rakitin</passengerLastName>
+        <passportData>1168556575</passportData>
+    </ticket>
