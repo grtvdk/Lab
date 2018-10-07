@@ -40,11 +40,13 @@ public class Main
                                 {
                                     if (line.contains("<passengerName>"))
                                         tickets.get(ticketIndex).setPassengerName(new String(getData(line)));
-                                    else if (line.contains("<passengerLastName>"))
-                                        tickets.get(ticketIndex).setPassengerLastName(new String(getData(line)));
                                     else {
-                                        if (line.contains("<passportData>"))
-                                            tickets.get(ticketIndex).setPassportData(new String(getData(line)));
+                                        if (line.contains("<passengerLastName>"))
+                                            tickets.get(ticketIndex).setPassengerLastName(new String(getData(line)));
+                                        else {
+                                            if (line.contains("<passportData>"))
+                                                tickets.get(ticketIndex).setPassportData(new String(getData(line)));
+                                        }
                                     }
                                 }
                             }
