@@ -35,7 +35,7 @@ public class Main
         int tagIndex = -1;
         try (BufferedReader reader = new BufferedReader(
                 new InputStreamReader(
-                        new FileInputStream("Ticket.xml"), StandardCharsets.UTF_8)))
+                        new FileInputStream("Tickets.xml"), StandardCharsets.UTF_8)))
         {
             String line;
             while ((line = reader.readLine()) != null)
@@ -46,7 +46,7 @@ public class Main
                     try
                     {
                         tagIndex = tags.indexOf(line.substring(line.indexOf("<")+1,line.indexOf(">")));
-                        xmlData[tagIndex] = new String(getData(line));
+                        xmlData[tagIndex] = new String(new String(line.substring(line.indexOf(">")+1,line.lastIndexOf("<"))));
                     }
                     catch (Exception e)
                     {
@@ -96,9 +96,5 @@ public class Main
             System.out.print(t.getStopover()+"\n"+t.getCarrier()+"\n"+t.getFlightNum()+"\n"+t.getPlaceNum()+"\n"+t.getPlaceClass()+"\n"+t.getDate()+"\n"+t.getTime()+"\n"+t.getStatus()+"\n"+
                     t.getFareBasis()+"\n"+t.getPrice()+"\n"+t.getFormOfPaint()+"\n"+t.getOrigin()+"\n"+t.getDestination()+"\n"+t.getPassengerName()+"\n"+t.getPassengerLastName()+"\n"+t.getDocument());
         }
-    }
-    private static String getData(String xmlString)
-    {
-        return new String(xmlString.substring(xmlString.indexOf(">")+1,xmlString.lastIndexOf("<")));
     }
 }

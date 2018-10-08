@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tickets>
+    <ticket>
+        <stopover>X</stopover>
+        <carrier>SU</carrier>
+        <flightNum>1</flightNum>
+        <placeNum>11</placeNum>
+        <placeClass>W</placeClass>
+        <date>01.01.2019</date>
+        <time>15:00</time>
+        <status>OK</status>
+        <fareBasis>01.01.2019/01.01.2019</fareBasis>
+        <price>5000</price>
+        <formOfPaint>INV</formOfPaint>
+        <origin>MSK</origin>
+        <destination>LED</destination>
+        <passengerName>Andrew</passengerName>
+        <passengerLastName>Rakitin</passengerLastName>
+        <document>1168556575</document>
+    </ticket>
+</tickets>>
