@@ -11,7 +11,7 @@ public class Main
 {
     public static void main(String[] args)
     {
-        boolean flag = false;
+        /*boolean flag = false;
         ArrayList<Ticket> tickets = new ArrayList<Ticket>();
         int ticketIndex = -1;
         ArrayList<String> tags= new ArrayList<String>();
@@ -95,6 +95,6 @@ public class Main
         {
             System.out.print(t.getStopover()+"\n"+t.getCarrier()+"\n"+t.getFlightNum()+"\n"+t.getPlaceNum()+"\n"+t.getPlaceClass()+"\n"+t.getDate()+"\n"+t.getTime()+"\n"+t.getStatus()+"\n"+
                     t.getFareBasis()+"\n"+t.getPrice()+"\n"+t.getFormOfPaint()+"\n"+t.getOrigin()+"\n"+t.getDestination()+"\n"+t.getPassengerName()+"\n"+t.getPassengerLastName()+"\n"+t.getDocument());
-        }
+        }*/
     }
 }

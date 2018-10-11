@@ -1,15 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<tickets>
+<!DOCTYPE tickets [
+        <!ELEMENT tickets (ticket)*>
+        <!ATTLIST tickets
+                xmlns CDATA #REQUIRED
+                xmlns:xsi CDATA #REQUIRED
+                xsi:schemaLocation CDATA #REQUIRED>
+        <!ELEMENT ticket (carrier|flightNum|placeNum|placeClass|date|time|status|fareBasisLeft|fareBasisRight|price|formOfPaint|origin|destination|passengerName|passengerLastName|document)*>
+        <!ELEMENT carrier (#PCDATA)>
+        <!ELEMENT flightNum (#PCDATA)>
+        <!ELEMENT placeNum (#PCDATA)>
+        <!ELEMENT placeClass (#PCDATA)>
+        <!ELEMENT date (#PCDATA)>
+        <!ELEMENT time (#PCDATA)>
+        <!ELEMENT status (#PCDATA)>
+        <!ELEMENT fareBasisLeft (#PCDATA)>
+        <!ELEMENT fareBasisRight (#PCDATA)>
+        <!ELEMENT price (#PCDATA)>
+        <!ELEMENT formOfPaint (#PCDATA)>
+        <!ELEMENT origin (#PCDATA)>
+        <!ELEMENT destination (#PCDATA)>
+        <!ELEMENT passengerName (#PCDATA)>
+        <!ELEMENT passengerLastName (#PCDATA)>
+        <!ELEMENT document (#PCDATA)>
+        ]>
+<tickets xmlns="https://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.w3schools.com ./Tickets.xsd">
     <ticket>
-        <stopover>X</stopover>
         <carrier>SU</carrier>
         <flightNum>1</flightNum>
         <placeNum>11</placeNum>
         <placeClass>W</placeClass>
-        <date>01.01.2019</date>
-        <time>15:00</time>
+        <date>2019-01-01</date>
+        <time>15:00:00</time>
         <status>OK</status>
-        <fareBasis>01.01.2019/01.01.2019</fareBasis>
+        <fareBasisLeft>2019-01-01</fareBasisLeft>
+        <fareBasisRight>2019-01-01</fareBasisRight>
         <price>5000</price>
         <formOfPaint>INV</formOfPaint>
         <origin>MSK</origin>
@@ -18,4 +41,4 @@
         <passengerLastName>Rakitin</passengerLastName>
         <document>1168556575</document>
     </ticket>
-</tickets>>
+</tickets>
