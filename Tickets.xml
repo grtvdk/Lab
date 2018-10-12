@@ -1,27 +1,4 @@
-<!DOCTYPE tickets [
-        <!ELEMENT tickets (ticket)*>
-        <!ATTLIST tickets
-                xmlns CDATA #REQUIRED
-                xmlns:xsi CDATA #REQUIRED
-                xsi:schemaLocation CDATA #REQUIRED>
-        <!ELEMENT ticket (carrier|flightNum|placeNum|placeClass|date|time|status|fareBasisLeft|fareBasisRight|price|formOfPaint|origin|destination|passengerName|passengerLastName|document)*>
-        <!ELEMENT carrier (#PCDATA)>
-        <!ELEMENT flightNum (#PCDATA)>
-        <!ELEMENT placeNum (#PCDATA)>
-        <!ELEMENT placeClass (#PCDATA)>
-        <!ELEMENT date (#PCDATA)>
-        <!ELEMENT time (#PCDATA)>
-        <!ELEMENT status (#PCDATA)>
-        <!ELEMENT fareBasisLeft (#PCDATA)>
-        <!ELEMENT fareBasisRight (#PCDATA)>
-        <!ELEMENT price (#PCDATA)>
-        <!ELEMENT formOfPaint (#PCDATA)>
-        <!ELEMENT origin (#PCDATA)>
-        <!ELEMENT destination (#PCDATA)>
-        <!ELEMENT passengerName (#PCDATA)>
-        <!ELEMENT passengerLastName (#PCDATA)>
-        <!ELEMENT document (#PCDATA)>
-        ]>
+<?xml version="1.0" encoding="UTF-8"?>
 <tickets xmlns="https://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.w3schools.com ./Tickets.xsd">
     <ticket>
         <carrier>SU</carrier>
@@ -34,7 +11,6 @@
         <fareBasisLeft>2019-01-01</fareBasisLeft>
         <fareBasisRight>2019-01-01</fareBasisRight>
         <price>5000</price>
-        <formOfPaint>INV</formOfPaint>
         <origin>MSK</origin>
         <destination>LED</destination>
         <passengerName>Andrew</passengerName>
