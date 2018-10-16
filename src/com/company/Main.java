@@ -8,16 +8,7 @@ public class Main
 {
     public static void main(String[] args) throws IOException
     {
-        try (BufferedReader reader = new BufferedReader(
-                new InputStreamReader(
-                        new FileInputStream("Tickets.xml"), StandardCharsets.UTF_8)))
-        {
-            Parser p = new Parser();
-            p.parse(reader, new ArrayList<>());
-        }
-        catch (IOException e)
-        {
-            System.out.println(e.toString());
-        }
+       Parser p = new Parser();
+       p.parse("Tickets.xml",new ArrayList<Ticket>());
     }
 }
