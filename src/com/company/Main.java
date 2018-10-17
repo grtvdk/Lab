@@ -9,6 +9,8 @@ public class Main
     public static void main(String[] args) throws IOException
     {
        Parser p = new Parser();
-       p.parse("Tickets.xml",new ArrayList<Ticket>());
+       DomParser dp = new DomParser("Tickets.xml");
+       dp.parse();
+       //p.parse("Tickets.xml",new ArrayList<Ticket>());
     }
 }

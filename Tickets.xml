@@ -8,13 +8,8 @@
         <date>2019-01-01</date>
         <time>15:00:00</time>
         <status>OK</status>
-        <fareBasisLeft>2019-01-01</fareBasisLeft>
-        <fareBasisRight>2019-01-01</fareBasisRight>
         <price>5000</price>
         <origin>MSK</origin>
         <destination>LED</destination>
-        <passengerName>Andrew</passengerName>
-        <passengerLastName>Rakitin</passengerLastName>
-        <document>1168556575</document>
     </ticket>
 </tickets>
