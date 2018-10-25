@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<passengers xmlns="Passenger" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="Passenger  Passenger.xsd">
+    <passenger>
+        <passengerName>Andrew</passengerName>
+        <passengerLastName>Rakitin</passengerLastName>
+        <document>6518455568</document>
+    </passenger>
+</passengers>

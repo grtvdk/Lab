@@ -1,5 +1,7 @@
 package com.company;
 
+import Essences.Ticket;
+
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -12,6 +14,8 @@ import java.util.List;
 
 public class Parser
 {
+
+
     public  Boolean parse(String fileName, List<Ticket> tickets)
     {
         int ticketIndex = 0;
@@ -64,7 +68,7 @@ public class Parser
                     {
                         if(line.contains("</ticket>"))
                         {
-                            LocalDate date = LocalDate.of(Integer.parseInt(xmlData[4].substring(0,xmlData[4].indexOf("-"))),
+                            /*LocalDate date = LocalDate.of(Integer.parseInt(xmlData[4].substring(0,xmlData[4].indexOf("-"))),
                                     Integer.parseInt(xmlData[4].substring(xmlData[4].indexOf("-")+1,xmlData[4].lastIndexOf("-"))),
                                     Integer.parseInt(xmlData[4].substring(xmlData[4].lastIndexOf("-")+1)));
                             LocalTime time = LocalTime.of(Integer.parseInt(xmlData[5].substring(0,xmlData[5].indexOf(":"))),
@@ -79,7 +83,7 @@ public class Parser
                                     new String(xmlData[6]), fareBasisLeft, fareBasisRight, Double.parseDouble(xmlData[9]), new String(xmlData[10]), new String(xmlData[11]),
                                     new String(xmlData[12]), new String(xmlData[13]), new String(xmlData[14])));
                             System.out.print(xmlData[0] + "\n" + xmlData[1] + "\n" + xmlData[2] + "\n" + xmlData[3] + "\n" + date + "\n" + time + "\n" + xmlData[6] + "\n" + fareBasisLeft+"\n" +
-                                    fareBasisRight + "\n" + Double.parseDouble(xmlData[9]) + "\n" + xmlData[10] + "\n" + xmlData[11] + "\n" + xmlData[12] + "\n" + xmlData[13] + "\n" + xmlData[14]);
+                                    fareBasisRight + "\n" + Double.parseDouble(xmlData[9]) + "\n" + xmlData[10] + "\n" + xmlData[11] + "\n" + xmlData[12] + "\n" + xmlData[13] + "\n" + xmlData[14]);*/
                         }
                     }
                 }
